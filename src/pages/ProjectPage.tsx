@@ -2,6 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import { ArrowLeft, ArrowUpRight, Check } from "lucide-react";
 import { projects } from "../data/portfolio";
 import { ProjectVisual } from "../features/projects/ProjectVisual";
+import { ProjectLinks } from "../features/projects/ProjectLinks";
 import { NotFoundPage } from "./NotFoundPage";
 export function ProjectPage() {
   const { slug } = useParams();
@@ -22,11 +23,12 @@ export function ProjectPage() {
           ))}
         </div>
       </section>
+      <ProjectLinks project={project} />
       <div className="project-detail">
         <ProjectVisual project={project} />
         <div>
           <p className="eyebrow">{project.company}</p>
-          <h2>My contribution.</h2>
+          <h2>What I worked on.</h2>
           <ul className="contribution-list">
             {project.contributions.map((item) => (
               <li key={item}>

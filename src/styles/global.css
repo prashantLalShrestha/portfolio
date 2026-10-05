@@ -1638,3 +1638,53 @@ p {
     padding-bottom: 45px;
   }
 }
+.project-card-main {
+  display: block;
+}
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 22px;
+  margin-bottom: 25px;
+}
+.project-card .project-links {
+  padding: 0 2px 16px;
+  margin-bottom: 0;
+  border-bottom: 1px solid var(--color-border);
+}
+.project-links a {
+  min-height: 32px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: var(--color-border);
+}
+.everyday-art {
+  position: absolute;
+  inset: 65px 30px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.everyday-icon {
+  width: 110px;
+  height: 110px;
+  display: grid;
+  place-items: center;
+  border-radius: 32px;
+  background: #ffffff85;
+  box-shadow: 8px 15px 25px #303a2c12;
+  transform: rotate(-7deg);
+  margin-bottom: 22px;
+}
+.everyday-art h3 {
+  font-size: 26px;
+}
+.everyday-art p {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 18px;
+  color: #53604d;
+  margin-top: 10px;
+}

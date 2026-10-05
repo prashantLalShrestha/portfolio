@@ -23,7 +23,6 @@ export const projects: Project[] = [
     category: "ENERGY & EVERYDAY LIFE",
     description:
       "Helping people understand their energy use and take control of their payments.",
-    platform: "React Native",
     tags: ["React Native", "Expo", "Accessibility"],
     color: "sage",
     visual: "energy",
@@ -35,6 +34,13 @@ export const projects: Project[] = [
       "Led feature-flag migration to LaunchDarkly and documented platform decisions with ADRs.",
       "Supported live operations through on-call duties and Sentry monitoring.",
     ],
+    platforms: ["iOS", "Android", "React Native"],
+    links: [
+      {
+        label: "Essent app",
+        url: "https://www.essent.nl/klanten/app",
+      },
+    ],
   },
   {
     slug: "podwalks",
@@ -42,7 +48,6 @@ export const projects: Project[] = [
     category: "AUDIO & EXPLORATION",
     description:
       "Location-based audio tours that bring the world around you to life.",
-    platform: "iOS & Android",
     tags: ["iOS & Android", "Shared infrastructure", "Audio"],
     color: "sand",
     visual: "audio",
@@ -52,6 +57,40 @@ export const projects: Project[] = [
       "Built shared mobile infrastructure for long-term stability.",
       "Translated product requirements into scalable, maintainable mobile solutions.",
     ],
+    platforms: ["iOS", "Android"],
+    links: [
+      {
+        label: "Podwalks platform",
+        url: "https://www.elements.nl/en/elements-podwalk-app-development",
+      },
+    ],
+  },
+  {
+    slug: "intergamma",
+    title: "GAMMA & Karwei apps",
+    category: "SHOPPING & HOME PROJECTS",
+    description:
+      "A little help with the next home project. React Native apps for GAMMA and Karwei, part of Intergamma.",
+    platforms: ["iOS", "Android", "React Native"],
+    tags: ["React Native", "iOS & Android", "Retail"],
+    color: "sand",
+    visual: "retail",
+    company: "Elements Interactive · Intergamma",
+    contributions: [
+      "Worked as a React Native consultant on the GAMMA and Karwei mobile apps.",
+      "Delivered new features and improvements to the user experience.",
+      "Helped maintain the apps and keep releases running smoothly.",
+    ],
+    links: [
+      {
+        label: "GAMMA on the App Store",
+        url: "https://apps.apple.com/nl/app/gamma-bouwmarkt/id949829216",
+      },
+      {
+        label: "Karwei on the App Store",
+        url: "https://apps.apple.com/nl/app/karwei-klussen-inrichten/id950680989",
+      },
+    ],
   },
   {
     slug: "kiwa-ewallet",
@@ -59,7 +98,6 @@ export const projects: Project[] = [
     category: "DIGITAL IDENTITY",
     description:
       "Secure credential sharing, built around real-world mobile standards.",
-    platform: "Android",
     tags: ["Android", "Bluetooth & NFC", "ISO 18013-5"],
     color: "lavender",
     visual: "identity",
@@ -69,6 +107,13 @@ export const projects: Project[] = [
       "Implemented secure credential sharing over Bluetooth and NFC.",
       "Worked with ISO 18013-5 standards for mobile credentials.",
     ],
+    platforms: ["Android"],
+    links: [
+      {
+        label: "Google Play",
+        url: "https://play.google.com/store/apps/details?id=com.kiwa.ewallet",
+      },
+    ],
   },
   {
     slug: "iremit",
@@ -76,7 +121,6 @@ export const projects: Project[] = [
     category: "FINTECH & REMITTANCE",
     description:
       "Mobile remittance experiences with secure identity verification at their core.",
-    platform: "iOS",
     tags: ["iOS & Android", "eKYC", "OWASP"],
     color: "rose",
     visual: "wallet",
@@ -85,6 +129,79 @@ export const projects: Project[] = [
       "Built the iRemit Customer App and integrated an eKYC system.",
       "Implemented OWASP Mobile Security practices with successful FSI VAPT approval in Japan, Korea, and Malaysia.",
       "Led end-to-end development across fintech, remittance, and enterprise domains.",
+    ],
+    platforms: ["iOS", "Android"],
+    links: [
+      {
+        label: "Inficare website",
+        url: "https://inficare.com.my/",
+      },
+    ],
+  },
+  {
+    slug: "paywell",
+    title: "Paywell Mobile Wallet",
+    category: "EVERYDAY PAYMENTS",
+    description:
+      "One of the first iOS apps I built at Inficare: a mobile wallet for everyday payments.",
+    platforms: ["iOS"],
+    tags: ["iOS", "Mobile wallet"],
+    color: "sage",
+    visual: "payment",
+    company: "Inficare",
+    contributions: [
+      "Developed Paywell Mobile Wallet for iOS.",
+      "Helped establish Inficare’s first iOS applications.",
+    ],
+    links: [
+      {
+        label: "Inficare website",
+        url: "https://inficare.com.my/",
+      },
+    ],
+  },
+  {
+    slug: "lugmety",
+    title: "Lugmety",
+    category: "FOOD & DELIVERY",
+    description:
+      "Behind every food delivery is a bit of logistics. I worked on the iOS side of Lugmety’s delivery app.",
+    platforms: ["iOS"],
+    tags: ["iOS", "Delivery logistics"],
+    color: "rose",
+    visual: "delivery",
+    company: "Lugmety",
+    contributions: ["Worked on an iOS food delivery logistics app."],
+    links: [
+      {
+        label: "Lugmety website",
+        url: "https://lugmety.com/ride-with-us",
+      },
+    ],
+  },
+  {
+    slug: "smart-nrna",
+    title: "Smart NRNA",
+    category: "COMMUNITY & CONNECTION",
+    description:
+      "A community app for Nepali people living abroad, available on iOS and Android.",
+    platforms: ["iOS", "Android"],
+    tags: ["iOS & Android", "Community"],
+    color: "lavender",
+    visual: "community",
+    company: "Smart NRNA",
+    contributions: [
+      "Worked on the Smart NRNA community app for iOS and Android.",
+    ],
+    links: [
+      {
+        label: "App Store",
+        url: "https://apps.apple.com/us/app/smart-nrna/id1544254635",
+      },
+      {
+        label: "Google Play",
+        url: "https://play.google.com/store/apps/details?id=com.respect.nrna",
+      },
     ],
   },
 ];

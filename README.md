@@ -66,3 +66,7 @@ The CV uses the same typed profile, experience, skills, and article data as the 
 ## Restore agent skills
 
 Run `npm run skills:install` to restore the skills listed in `skills-lock.json` into `.agents/skills/` using the Skills CLI. This requires network access. Local `.agents/` and `.claude/` directories stay ignored by Git.
+
+## Project links and platforms
+
+Each project declares `platforms` and labelled public `links` in `src/data/portfolio.ts`. The Work page filters directly on platform data. Cards and detail pages share the same external links. The collection includes Essent, Podwalks, GAMMA/Karwei (Intergamma), Kiwa eWallet, iRemit, Paywell, Lugmety, and Smart NRNA. iRemit and Paywell link to Inficare’s company website because current app listings could not be verified; Lugmety links to the company’s delivery page.

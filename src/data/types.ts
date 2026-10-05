@@ -4,10 +4,19 @@ export interface Project {
   title: string;
   category: string;
   description: string;
-  platform: Platform;
+  platforms: Platform[];
+  links: { label: string; url: string }[];
   tags: string[];
   color: string;
-  visual: "energy" | "audio" | "identity" | "wallet";
+  visual:
+    | "energy"
+    | "audio"
+    | "identity"
+    | "wallet"
+    | "retail"
+    | "payment"
+    | "delivery"
+    | "community";
   company: string;
   contributions: string[];
 }

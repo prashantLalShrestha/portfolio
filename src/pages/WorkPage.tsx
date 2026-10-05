@@ -3,13 +3,9 @@ import { projects } from "../data/portfolio";
 import { ProjectCard } from "../features/projects/ProjectCard";
 const filters = ["All work", "React Native", "iOS", "Android"] as const;
 export function WorkPage() {
-  const [filter, setFilter] = useState<string>("All work");
+  const [filter, setFilter] = useState<(typeof filters)[number]>("All work");
   const visible = projects.filter(
-    (project) =>
-      filter === "All work" ||
-      project.platform === filter ||
-      (project.tags.includes("iOS & Android") &&
-        (filter === "Android" || filter === "iOS")),
+    (project) => filter === "All work" || project.platforms.includes(filter),
   );
   return (
     <>

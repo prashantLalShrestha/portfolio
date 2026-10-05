@@ -8,8 +8,11 @@ import {
   Sun,
   Wallet,
 } from "lucide-react";
+import { EverydayProjectVisual } from "./EverydayProjectVisual";
 import type { Project } from "../../data/types";
 export function ProjectVisual({ project }: { project: Project }) {
+  if (["retail", "payment", "delivery", "community"].includes(project.visual))
+    return <EverydayProjectVisual project={project} />;
   return (
     <div className={`project-visual ${project.color}`} aria-hidden="true">
       <div className="visual-grid" />
