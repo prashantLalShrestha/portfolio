@@ -53,7 +53,7 @@ The source CV includes a street address and phone number; those are omitted from
 
 ## Hosting
 
-Deploy the `dist` directory to a static host. Configure an SPA fallback that serves `index.html` for non-file routes so direct links such as `/about` work. No deployment has been performed.
+Deploy with `npm run deploy`. The build generates HTML entries for `/about`, `/work`, `/articles`, `/contact`, and every project slug so GitHub Pages can serve direct visits and reloads. Project entries are generated from `src/data/portfolio.ts`. When adding another top-level route, add it to the route list in `vite.config.ts`. A generated `404.html` shows the React not-found page for unknown URLs. `public/CNAME` preserves the custom domain.
 
 ## Content boundaries
 

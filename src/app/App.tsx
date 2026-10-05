@@ -19,7 +19,8 @@ export function App() {
   const { pathname } = useLocation();
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "instant" });
-    document.title = `${titles[pathname] ?? (pathname.startsWith("/work/") ? "Project" : "Page not found")} — Prashant Shrestha`;
+    const routePath = pathname.replace(/\/+$/, "") || "/";
+    document.title = `${titles[routePath] ?? (routePath.startsWith("/work/") ? "Project" : "Page not found")} — Prashant Shrestha`;
   }, [pathname]);
   return (
     <Routes>
