@@ -1675,7 +1675,6 @@ p {
   border-radius: 32px;
   background: #ffffff85;
   box-shadow: 8px 15px 25px #303a2c12;
-  transform: rotate(-7deg);
   margin-bottom: 22px;
 }
 .everyday-art h3 {
@@ -1687,4 +1686,32 @@ p {
   font-size: 18px;
   color: #53604d;
   margin-top: 10px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .credential,
+  .wallet-card {
+    transition: transform var(--motion-normal);
+  }
+
+  .project-card:hover .credential,
+  .project-card:focus-within .credential {
+    transform: rotate(-3deg) translateY(-6px);
+  }
+
+  .project-card:hover .wallet-card,
+  .project-card:focus-within .wallet-card {
+    transform: rotate(2deg) translateY(-6px);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .everyday-icon {
+    transition: transform var(--motion-normal);
+  }
+
+  .project-card:hover .everyday-icon,
+  .project-card:focus-within .everyday-icon {
+    transform: scale(1.04);
+  }
 }

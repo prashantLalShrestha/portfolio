@@ -116,17 +116,17 @@ export const projects: Project[] = [
     ],
   },
   {
-    slug: "iremit",
-    title: "iRemit Customer App",
+    slug: "remitx",
+    title: "RemitX Customer App",
     category: "FINTECH & REMITTANCE",
     description:
       "Mobile remittance experiences with secure identity verification at their core.",
     tags: ["iOS & Android", "eKYC", "OWASP"],
     color: "rose",
     visual: "wallet",
-    company: "Inficare · iRemit",
+    company: "Inficare · RemitX",
     contributions: [
-      "Built the iRemit Customer App and integrated an eKYC system.",
+      "Built the RemitX Customer App and integrated an eKYC system.",
       "Implemented OWASP Mobile Security practices with successful FSI VAPT approval in Japan, Korea, and Malaysia.",
       "Led end-to-end development across fintech, remittance, and enterprise domains.",
     ],
@@ -134,29 +134,29 @@ export const projects: Project[] = [
     links: [
       {
         label: "Inficare website",
-        url: "https://inficare.com.my/",
+        url: "https://inficare.com.my/products/remitx",
       },
     ],
   },
   {
-    slug: "paywell",
-    title: "Paywell Mobile Wallet",
+    slug: "payx",
+    title: "PayX Mobile Wallet",
     category: "EVERYDAY PAYMENTS",
     description:
-      "One of the first iOS apps I built at Inficare: a mobile wallet for everyday payments.",
+      "One of the first iOS apps I built at Inficare: a mobile wallet system for everyday payments.",
     platforms: ["iOS"],
     tags: ["iOS", "Mobile wallet"],
     color: "sage",
     visual: "payment",
     company: "Inficare",
     contributions: [
-      "Developed Paywell Mobile Wallet for iOS.",
+      "Developed PayX Mobile Wallet for iOS.",
       "Helped establish Inficare’s first iOS applications.",
     ],
     links: [
       {
         label: "Inficare website",
-        url: "https://inficare.com.my/",
+        url: "https://inficare.com.my/products/payx",
       },
     ],
   },
@@ -235,7 +235,7 @@ export const experience: Experience[] = [
     location: "Kathmandu, Nepal",
     highlights: [
       "Led delivery of 15+ mobile applications and a team of 10 developers.",
-      "Built iRemit with eKYC and applied OWASP security practices, achieving FSI VAPT approval in Japan, Korea, and Malaysia.",
+      "Built RemitX with eKYC and applied OWASP security practices, achieving FSI VAPT approval in Japan, Korea, and Malaysia.",
     ],
   },
   {
@@ -244,7 +244,7 @@ export const experience: Experience[] = [
     period: "Jan 2018 — Jun 2019",
     location: "Kathmandu, Nepal",
     highlights: [
-      "Built the company’s first iOS apps: Paywell and iRemit.",
+      "Built the company’s first iOS apps: PayX and RemitX.",
       "Introduced Git and improved mobile development practices.",
     ],
   },

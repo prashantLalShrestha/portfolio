@@ -23,7 +23,7 @@ export function HomePage() {
           </div>
           <div className="hero-actions">
             <a className="button primary" href={profile.cv} download>
-              Download CV <Download size={17} />
+              Download résumé <Download size={17} />
             </a>
             <Link className="text-link" to="/contact">
               Get in touch <ArrowUpRight size={16} />
@@ -70,9 +70,7 @@ export function HomePage() {
         <div>
           <p className="eyebrow">EXPERIENCE</p>
           <h2>
-            A little about
-            <br />
-            the journey.
+            A little about <br />the journey.
           </h2>
           <p className="section-copy">
             My work has taken me from Kathmandu to the Netherlands, building
