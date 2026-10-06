@@ -59,10 +59,6 @@ Deploy with `npm run deploy`. The build generates HTML entries for `/about`, `/w
 
 Descriptions summarize the CV and do not claim unprovided performance metrics. Artwork is labeled as concept illustration. Podwalks supports iOS and Android, as confirmed by Prashant. No contact form is simulated: email links open the visitor’s email client.
 
-## Rebuilding the simplified CV
-
-The CV uses the same typed profile, experience, skills, and article data as the website. Run `node scripts/export-cv-data.mjs`, then run `python scripts/generate_cv.py` in an environment with PyMuPDF installed. The script writes the one-page CV to `output/pdf` and updates the public download. Source content and portrait are maintained under `src/data` and `public`.
-
 ## Restore agent skills
 
 Run `npm run skills:install` to restore the skills listed in `skills-lock.json` into `.agents/skills/` using the Skills CLI. This requires network access. Local `.agents/` and `.claude/` directories stay ignored by Git.
