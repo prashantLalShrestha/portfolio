@@ -1,10 +1,15 @@
 import { ArrowUpRight } from "lucide-react";
 import { articles } from "../../data/articles";
-export function ArticleList() {
+interface ArticleListProps {
+  showCovers?: boolean;
+}
+
+export function ArticleList({ showCovers = false }: ArticleListProps) {
   return (
     <div className="article-list">
       {articles.map((article) => (
         <article className="article-card" key={article.url}>
+          {showCovers ? (
           <a
             className="article-cover"
             href={article.url}
@@ -21,6 +26,7 @@ export function ArticleList() {
               decoding="async"
             />
           </a>
+          ) : null}
           <div className="article-meta">
             <span>ESSENT IT</span>
             <time dateTime={article.published}>{article.dateLabel}</time>

@@ -14,7 +14,7 @@ export function ArticlesPage() {
           working on. These stories are published on Essent IT.
         </p>
       </section>
-      <ArticleList />
+      <ArticleList showCovers />
       <p className="work-note">
         Written by Prashant Shrestha. Published on Essent IT. Articles open on
         the publisher’s website.
