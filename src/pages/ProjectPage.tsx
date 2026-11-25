@@ -3,6 +3,7 @@ import { ArrowLeft, ArrowUpRight, Check } from "lucide-react";
 import { projects } from "../data/portfolio";
 import { ProjectVisual } from "../features/projects/ProjectVisual";
 import { ProjectLinks } from "../features/projects/ProjectLinks";
+import { CompanyLogo } from "../components/ui/CompanyLogo";
 import { NotFoundPage } from "./NotFoundPage";
 export function ProjectPage() {
   const { slug } = useParams();
@@ -27,7 +28,7 @@ export function ProjectPage() {
       <div className="project-detail">
         <ProjectVisual project={project} />
         <div>
-          <p className="eyebrow">{project.company}</p>
+          <div className="company-label company-label--subtle"><CompanyLogo companyId={project.companyId} subtle /><p className="eyebrow">{project.company}</p></div>
           <h2>What I worked on.</h2>
           <ul className="contribution-list">
             {project.contributions.map((item) => (

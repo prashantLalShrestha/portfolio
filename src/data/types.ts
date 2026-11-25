@@ -1,3 +1,4 @@
+import type { CompanyId } from "./companies";
 export type Platform = "React Native" | "iOS" | "Android" | "iOS & Android";
 export interface Project {
   slug: string;
@@ -18,10 +19,12 @@ export interface Project {
     | "delivery"
     | "community";
   company: string;
+  companyId: CompanyId;
   contributions: string[];
 }
 export interface Experience {
   company: string;
+  companyId: CompanyId;
   role: string;
   period: string;
   location: string;

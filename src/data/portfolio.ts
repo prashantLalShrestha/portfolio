@@ -27,6 +27,7 @@ export const projects: Project[] = [
     color: "sage",
     visual: "energy",
     company: "Essent",
+    companyId: "essent",
     contributions: [
       "Delivered real-time energy consumption insights and payment adjustment features.",
       "Implemented WCAG 2.2 AA accessibility, achieving certification by Stichting Accessibility.",
@@ -52,6 +53,7 @@ export const projects: Project[] = [
     color: "sand",
     visual: "audio",
     company: "Elements Interactive · Podwalks",
+    companyId: "elements",
     contributions: [
       "Owned development of a white-label location-based audio tour app.",
       "Built shared mobile infrastructure for long-term stability.",
@@ -76,6 +78,7 @@ export const projects: Project[] = [
     color: "sand",
     visual: "retail",
     company: "Elements Interactive · Intergamma",
+    companyId: "intergamma",
     contributions: [
       "Worked as a React Native consultant on the GAMMA and Karwei mobile apps.",
       "Delivered new features and improvements to the user experience.",
@@ -102,6 +105,7 @@ export const projects: Project[] = [
     color: "lavender",
     visual: "identity",
     company: "Elements Interactive · Kiwa eWallet",
+    companyId: "kiwa",
     contributions: [
       "Served as an Android mobile consultant on Kiwa eWallet.",
       "Implemented secure credential sharing over Bluetooth and NFC.",
@@ -125,6 +129,7 @@ export const projects: Project[] = [
     color: "rose",
     visual: "wallet",
     company: "Inficare · RemitX",
+    companyId: "inficare",
     contributions: [
       "Built the RemitX Customer App and integrated an eKYC system.",
       "Implemented OWASP Mobile Security practices with successful FSI VAPT approval in Japan, Korea, and Malaysia.",
@@ -149,6 +154,7 @@ export const projects: Project[] = [
     color: "sage",
     visual: "payment",
     company: "Inficare",
+    companyId: "inficare",
     contributions: [
       "Developed PayX Mobile Wallet for iOS.",
       "Helped establish Inficare’s first iOS applications.",
@@ -171,6 +177,7 @@ export const projects: Project[] = [
     color: "rose",
     visual: "delivery",
     company: "Lugmety",
+    companyId: "lugmety",
     contributions: ["Worked on an iOS food delivery logistics app."],
     links: [
       {
@@ -190,6 +197,7 @@ export const projects: Project[] = [
     color: "lavender",
     visual: "community",
     company: "Smart NRNA",
+    companyId: "nrna",
     contributions: [
       "Worked on the Smart NRNA community app for iOS and Android.",
     ],
@@ -208,6 +216,7 @@ export const projects: Project[] = [
 export const experience: Experience[] = [
   {
     company: "Essent",
+    companyId: "essent",
     role: "Senior Mobile Engineer",
     period: "Jul 2024 — Present",
     location: "’s-Hertogenbosch, Netherlands",
@@ -219,6 +228,7 @@ export const experience: Experience[] = [
   },
   {
     company: "Elements Interactive",
+    companyId: "elements",
     role: "Mobile App Developer",
     period: "Jun 2022 — May 2024",
     location: "Almere, Netherlands",
@@ -230,6 +240,7 @@ export const experience: Experience[] = [
   },
   {
     company: "Inficare",
+    companyId: "inficare",
     role: "Lead Mobile Developer",
     period: "Jun 2019 — Jan 2021",
     location: "Kathmandu, Nepal",
@@ -240,6 +251,7 @@ export const experience: Experience[] = [
   },
   {
     company: "Inficare",
+    companyId: "inficare",
     role: "iOS Developer",
     period: "Jan 2018 — Jun 2019",
     location: "Kathmandu, Nepal",

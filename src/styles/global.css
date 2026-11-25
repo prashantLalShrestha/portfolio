@@ -1729,3 +1729,55 @@ p {
     transform: scale(1.04);
   }
 }
+
+.company-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+.company-logo {
+  display: inline-grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  padding: 6px;
+  border-radius: 10px;
+  background: #fff;
+  border: 1px solid #e5e5df;
+  color: #465735;
+  font-size: 12px;
+  font-weight: 600;
+}
+.company-logo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.article-meta { align-items: center; }
+.company-name.company-label { flex-wrap: wrap; gap: 8px; }
+
+/* Secondary logos sit quietly beside labels, without a badge or border. */
+.company-label--subtle { gap: 8px; }
+.company-logo--subtle {
+  width: auto;
+  height: 18px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+.company-logo--subtle img {
+  width: auto;
+  max-width: 48px;
+  height: 16px;
+  border-radius: 5px;
+}
+[data-theme="dark"] .company-logo--subtle img {
+  background: #fff;
+  border-radius: 5px;
+  padding: 2px;
+  height: 18px;
+}

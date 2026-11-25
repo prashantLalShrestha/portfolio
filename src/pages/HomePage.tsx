@@ -3,6 +3,7 @@ import { ArrowUpRight, Download, MapPin } from "lucide-react";
 import { profile, experience } from "../data/portfolio";
 import { highlights } from "../data/highlights";
 import { SectionHeading } from "../components/ui/SectionHeading";
+import { CompanyLogo } from "../components/ui/CompanyLogo";
 import { ArticleList } from "../features/articles/ArticleList";
 export function HomePage() {
   return (
@@ -86,9 +87,9 @@ export function HomePage() {
               className="experience-preview-row"
               key={item.role + item.company}
             >
-              <div>
-                <h3>{item.company}</h3>
-                <p>{item.role}</p>
+              <div className="company-label">
+                <CompanyLogo companyId={item.companyId} />
+                <div><h3>{item.company}</h3><p>{item.role}</p></div>
               </div>
               <span>{item.period}</span>
             </div>

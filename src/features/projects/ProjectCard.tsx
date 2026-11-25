@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 import type { Project } from "../../data/types";
+import { CompanyLogo } from "../../components/ui/CompanyLogo";
 import { ProjectVisual } from "./ProjectVisual";
 import { ProjectLinks } from "./ProjectLinks";
 export function ProjectCard({ project }: { project: Project }) {
@@ -9,7 +10,7 @@ export function ProjectCard({ project }: { project: Project }) {
       <Link to={`/work/${project.slug}`} className="project-card-main">
         <ProjectVisual project={project} />
         <div className="project-card-info">
-          <p className="eyebrow">{project.category}</p>
+          <div className="company-label company-label--subtle"><CompanyLogo companyId={project.companyId} subtle /><p className="eyebrow">{project.category}</p></div>
           <div className="project-title">
             <h3>{project.title}</h3>
             <span className="project-arrow">

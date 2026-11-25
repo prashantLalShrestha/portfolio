@@ -1,6 +1,7 @@
 import { ArrowUpRight, Download } from "lucide-react";
 import { Link } from "react-router-dom";
 import { profile, experience, skills } from "../data/portfolio";
+import { CompanyLogo } from "../components/ui/CompanyLogo";
 import { SectionHeading } from "../components/ui/SectionHeading";
 export function AboutPage() {
   return (
@@ -38,7 +39,8 @@ export function AboutPage() {
               </div>
               <div>
                 <h3>{item.role}</h3>
-                <p className="company-name">
+                <p className="company-name company-label company-label--subtle">
+                  <CompanyLogo companyId={item.companyId} subtle />
                   {item.company} <span>· {item.location}</span>
                 </p>
                 <ul>
