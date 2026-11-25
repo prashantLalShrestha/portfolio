@@ -1,3 +1,4 @@
+import { ProductHint } from "./ProductHint";
 import { ShoppingBag, Truck, Users, Wallet } from "lucide-react";
 import type { Project } from "../../data/types";
 const visuals = {
@@ -6,7 +7,7 @@ const visuals = {
   delivery: { Icon: Truck, caption: "From the kitchen to your door." },
   community: { Icon: Users, caption: "A little closer to the community." },
 };
-export function EverydayProjectVisual({ project }: { project: Project }) {
+export function EverydayProjectVisual({ project, productImage }: { project: Project; productImage?: string }) {
   const key = project.visual;
   if (
     key !== "retail" &&
@@ -21,6 +22,7 @@ export function EverydayProjectVisual({ project }: { project: Project }) {
       className={`project-visual everyday-visual ${project.color}`}
       aria-hidden="true"
     >
+      {productImage ? <ProductHint src={productImage} /> : null}
       <div className="visual-grid" />
       <span className="visual-index">{project.category}</span>
       <div className="everyday-art">

@@ -1781,3 +1781,96 @@ p {
   padding: 2px;
   height: 18px;
 }
+
+/* Reveal is an overlay only: original artwork/caption geometry stays intact. */
+.product-hint {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.025;
+  filter: saturate(0.65);
+  mask-image: linear-gradient(110deg, transparent 5%, #000 75%);
+  pointer-events: none;
+}
+.product-hint[hidden] { display: none; }
+.product-reveal-stage {
+  position: relative;
+  touch-action: pan-y;
+  cursor: ew-resize;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.product-reveal-stage > .project-visual { pointer-events: none; }
+.product-reveal-image {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: var(--radius-card);
+  pointer-events: none;
+}
+.product-reveal-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.reveal-divider {
+  position: absolute;
+  inset-block: 0;
+  left: var(--reveal);
+  width: 1px;
+  background: var(--color-accent);
+  z-index: 2;
+  pointer-events: none;
+}
+.product-reveal { position: relative; }
+.reveal-hint {
+  position: absolute;
+  top: 12px;
+  bottom: auto;
+  right: 16px;
+  z-index: 3;
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid #53604d20;
+  background: #f7f7f0d9;
+  color: #53604d;
+  font-size: 17px;
+  line-height: 1;
+  cursor: pointer;
+}
+.reveal-hint:hover { background: #fff; }
+@media (prefers-reduced-motion: no-preference) {
+  .product-reveal--animate .product-reveal-image { transition: clip-path 400ms ease; }
+  .product-reveal--animate .reveal-divider { transition: left 400ms ease; }
+}
+
+/* Feather into the card color when a decorative caption crosses the artwork. */
+.project-visual.sage { --caption-background: 224 231 215; }
+.project-visual.sand { --caption-background: 236 227 212; }
+.project-visual.lavender { --caption-background: 227 225 239; }
+.project-visual.rose { --caption-background: 237 223 216; }
+.visual-note {
+  isolation: isolate;
+  z-index: 1;
+}
+.visual-note::before {
+  content: "";
+  position: absolute;
+  inset: -12px -18px;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse at center,
+    rgb(var(--caption-background) / 0.96) 25%,
+    rgb(var(--caption-background) / 0.8) 50%,
+    rgb(var(--caption-background) / 0) 75%
+  );
+}

@@ -1,3 +1,4 @@
+import { ProductHint } from "./ProductHint";
 import {
   ArrowUpRight,
   AudioLines,
@@ -10,11 +11,12 @@ import {
 } from "lucide-react";
 import { EverydayProjectVisual } from "./EverydayProjectVisual";
 import type { Project } from "../../data/types";
-export function ProjectVisual({ project }: { project: Project }) {
+export function ProjectVisual({ project, productImage }: { project: Project; productImage?: string }) {
   if (["retail", "payment", "delivery", "community"].includes(project.visual))
-    return <EverydayProjectVisual project={project} />;
+    return <EverydayProjectVisual project={project} productImage={productImage} />;
   return (
     <div className={`project-visual ${project.color}`} aria-hidden="true">
+      {productImage ? <ProductHint src={productImage} /> : null}
       <div className="visual-grid" />
       <span className="visual-index">
         {project.visual === "energy"
