@@ -9,6 +9,16 @@ export interface Article {
 }
 export const articles: Article[] = [
   {
+    title: "Beyond the Brand Colors",
+    summary:
+      "Same team, different default settings. A few thoughts on culture, communication, and the people who make working together interesting.",
+    url: "https://it.essent.nl/articles/software/beyond-the-brand-colors",
+    published: "2026-11-12",
+    dateLabel: "12 November 2026",
+    readingTime: "7 min read",
+    topics: ["Teamwork", "Culture", "Communication"],
+  },
+  {
     title:
       "Why we chose Expo Application Services (EAS): A journey toward simplicity",
     summary:
