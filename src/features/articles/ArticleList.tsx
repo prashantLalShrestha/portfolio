@@ -5,6 +5,22 @@ export function ArticleList() {
     <div className="article-list">
       {articles.map((article) => (
         <article className="article-card" key={article.url}>
+          <a
+            className="article-cover"
+            href={article.url}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={`Read ${article.title} (opens in a new tab)`}
+          >
+            <img
+              src={article.cover.src}
+              width={article.cover.width}
+              height={article.cover.height}
+              alt=""
+              loading="lazy"
+              decoding="async"
+            />
+          </a>
           <div className="article-meta">
             <span>ESSENT IT</span>
             <time dateTime={article.published}>{article.dateLabel}</time>

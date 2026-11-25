@@ -1522,6 +1522,20 @@ p {
   border-radius: var(--radius-card);
   background: var(--color-surface);
 }
+.article-cover {
+  display: block;
+  overflow: hidden;
+  border-radius: var(--radius-small);
+  margin-bottom: 24px;
+  background: var(--color-accentSoft);
+}
+.article-cover img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  object-fit: cover;
+}
 .article-meta {
   display: flex;
   flex-wrap: wrap;
